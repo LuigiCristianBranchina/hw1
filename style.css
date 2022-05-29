@@ -1,0 +1,298 @@
+@media(max-width: 700px) {
+    body{
+        font-size: 50%;
+    }
+    #menu a{
+        font-size: 24px;
+    }
+    #container1 {
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    #menu a{
+        padding: 5px 10px;
+    }
+}
+
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#titolo{
+    display: flex;    
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-08.jpg");
+    background-size: cover;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+#testotitolo{
+    margin: 10px;
+}
+#benvenuto div{
+    font-family: 'PT Sans', sans-serif;
+    margin: 10px;
+    border-bottom: 2px solid white;
+}
+#menu a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#container1{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+#contenuto{
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: row;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-08.jpg");
+    background-size: cover;
+}
+#menu a{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(219, 106, 106);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#div_ricerca {
+    background: #F0F0F0;
+    border: black 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#div_playlist {
+    background: #F0F0F0;
+    border: black 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#div_playlist h1{
+    margin: 0px;
+    font-size: 20px;
+}
+
+#div_playlist h1.selPlay{
+    margin: 5px;
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 3px solid black;
+}
+
+#tasto_submit{
+    background-color: rgb(219, 106, 106);
+    color: white;
+    font-size: 1.5em;
+    cursor:pointer;
+    border-radius: 10px;
+    border:none;
+    padding: 5px;
+}
+
+#tasto_submit_home{
+    background-color: rgb(219, 106, 106);
+    color: white;
+    font-size: 1em;
+    cursor:pointer;
+    border-radius: 10px;
+    border:none;
+    padding: 5px;
+}
+
+.head-risultati {
+    margin: 20px 0px;
+    font-size: 1.5em;
+    border-bottom: black 1px solid;
+}
+
+#container-risultati, #container-play {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    background:  #F0F0F0;
+    border: black 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+#container-play{
+    margin-top: 30px;
+}
+
+.div-video{    
+    width: 30%;
+    justify-content: space-between;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+
+.div-video div{
+    width: 100%;
+    word-break: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.frame-div{
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+}
+
+.frame-video{
+    width: 100%;
+    height: 100%;
+}
+
+.info-video {
+    display: flex;
+    flex-direction: column;
+}
+
+.titolo-video {
+    font-weight: bold;
+}
+
+.titolo-video, .descrizione-video, .thumb-video{
+
+    width: 250px;
+}
+
+.hidden, #modal-view.hidden{
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+ }
+  
+
+/*HOME*/
+
+#titolo_playlist{
+    width: 100%;
+    height: 3%;
+    margin-top: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#ricerca div{
+    padding: 10px;
+}
+
+div.playlist, div.contenuto{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    display: inline-block;
+    margin: 10px 10px 20px 10px;
+}
+
+div.playlist img, div.contenuto img{
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+}
+
+input#titolo_video, SELECT#nome_playlist{
+    width: 100%;
+    height: 3%;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.button-agg{
+    height: 5%;
+    width: 100%;
+}
+
+.div-label{
+    padding: 5px;
+}
+
+.label{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+#modal-view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal-view img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.frame-div-modal{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 80%;
+}
+.info-video-modal{
+    padding: 20px;
+}
+.info-video-modal div{
+    font-weight: bold;
+    font-size: 2em;
+}
+.info-video-modal p{
+    font-size: 1.2em;
+}
+div.div-video-modal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.info-video-modal div,div.info-video-modal p{
+    color: white;
+}
+.frame-video-modal{
+    height: 100%;
+    width: 100%;
+}
+
+.button_elimina{
+    width: 100%;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(219, 106, 106);
+    color:white;
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+body{
+  margin: 0px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/backgroundLS.png");
+  background-size: cover;
+}
+
+p {
+  margin: 0.3em;
+}
+
+.errore {
+  font-weight: bold;
+  color: red;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  margin-left: 0.5em;
+}
